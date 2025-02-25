@@ -122,7 +122,7 @@ d3.json("data.json").then(function(data) {
   
   // Add legend
   const legend = svg.append("g")
-    .attr("transform", `translate(${width - 100}, 15)`);
+    .attr("transform", `translate(${width - 100}, -30)`);
   
   // Ampang
   legend.append("circle")
@@ -169,7 +169,7 @@ d3.json("data.json").then(function(data) {
   svg.append("text")
     .attr("x", width / 2)
     .attr("y", -margin.top / 2)
-    .attr("text-anchor", "right")
+    .attr("text-anchor", "middle")
     .style("font-size", "16px")
     .style("font-weight", "bold")
     .text("Death Rates of Hospitals with Similar Discharge Numbers");

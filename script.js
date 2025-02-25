@@ -122,7 +122,7 @@ d3.json("data.json").then(function(data) {
   
   // Add legend
   const legend = svg.append("g")
-  .attr("transform", `translate(${width - 100}, ${height - 10})`);
+  .attr("transform", `translate(${width - 100}, ${height - 15})`);
   
   // Ampang
   legend.append("circle")

@@ -169,7 +169,7 @@ d3.json("data.json").then(function(data) {
   svg.append("text")
     .attr("x", width / 2)
     .attr("y", -margin.top / 2)
-    .attr("text-anchor", "middle")
+    .attr("text-anchor", "left")
     .style("font-size", "16px")
     .style("font-weight", "bold")
     .text("Death Rates of Hospitals with Similar Discharge Numbers");

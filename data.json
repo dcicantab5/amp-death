@@ -1,0 +1,114 @@
+[
+  {
+    "name": "HOSPITAL AMPANG",
+    "state": "SELANGOR",
+    "discharges": 13054,
+    "deaths": 756,
+    "deathRate": 5.79,
+    "bedOccupancy": 87.47
+  },
+  {
+    "name": "HOSPITAL SULTAN ISMAIL JOHOR BAHRU",
+    "state": "JOHOR",
+    "discharges": 12675,
+    "deaths": 926,
+    "deathRate": 7.31,
+    "bedOccupancy": 85.60
+  },
+  {
+    "name": "HOSPITAL RAJA PEREMPUAN ZAINAB II",
+    "state": "KELANTAN",
+    "discharges": 12510,
+    "deaths": 751,
+    "deathRate": 6.00,
+    "bedOccupancy": 155.11
+  },
+  {
+    "name": "HOSPITAL SULTAN ABDUL HALIM",
+    "state": "KEDAH",
+    "discharges": 12147,
+    "deaths": 875,
+    "deathRate": 7.20,
+    "bedOccupancy": 108.47
+  },
+  {
+    "name": "HOSPITAL SULTANAH BAHIYAH",
+    "state": "KEDAH",
+    "discharges": 12100,
+    "deaths": 826,
+    "deathRate": 6.83,
+    "bedOccupancy": 89.89
+  },
+  {
+    "name": "HOSPITAL RAJA PERMAISURI BAINUN",
+    "state": "PERAK",
+    "discharges": 14278,
+    "deaths": 1206,
+    "deathRate": 8.45,
+    "bedOccupancy": 85.12
+  },
+  {
+    "name": "HOSPITAL SULTANAH NORA ISMAIL",
+    "state": "JOHOR", 
+    "discharges": 14586,
+    "deaths": 757,
+    "deathRate": 5.19,
+    "bedOccupancy": 139.88
+  },
+  {
+    "name": "HOSPITAL PAKAR SULTANAH FATIMAH",
+    "state": "JOHOR",
+    "discharges": 14669,
+    "deaths": 759,
+    "deathRate": 5.17,
+    "bedOccupancy": 94.20
+  },
+  {
+    "name": "HOSPITAL UMUM SARAWAK",
+    "state": "SARAWAK",
+    "discharges": 11349,
+    "deaths": 792,
+    "deathRate": 6.98,
+    "bedOccupancy": 121.63
+  },
+  {
+    "name": "HOSPITAL MELAKA",
+    "state": "MELAKA",
+    "discharges": 14771,
+    "deaths": 784,
+    "deathRate": 5.31,
+    "bedOccupancy": 112.52
+  },
+  {
+    "name": "HOSPITAL TAIPING",
+    "state": "PERAK",
+    "discharges": 11269,
+    "deaths": 637,
+    "deathRate": 5.65,
+    "bedOccupancy": 122.33
+  },
+  {
+    "name": "HOSPITAL TUANKU FAUZIAH",
+    "state": "PERLIS",
+    "discharges": 11250,
+    "deaths": 696,
+    "deathRate": 6.19,
+    "bedOccupancy": 93.34
+  },
+  {
+    "name": "HOSPITAL SUNGAI BULUH",
+    "state": "SELANGOR",
+    "discharges": 11111,
+    "deaths": 804,
+    "deathRate": 7.24,
+    "bedOccupancy": 88.05
+  },
+  {
+    "name": "HOSPITAL SULTAN HJ AHMAD SHAH",
+    "state": "PAHANG",
+    "discharges": 11024,
+    "deaths": 657,
+    "deathRate": 5.96,
+    "bedOccupancy": 65.95
+  }
+]

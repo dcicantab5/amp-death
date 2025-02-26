@@ -68,7 +68,7 @@ d3.json("data.json").then(function(data) {
   
   // Add average line label
   svg.append("text")
-    .attr("x", width)
+    .attr("x", width - 10)
     .attr("y", y(avgDeathRate) - 5)
     .attr("text-anchor", "end")
     .style("font-size", "10px")
@@ -120,51 +120,6 @@ d3.json("data.json").then(function(data) {
         tooltip.style("visibility", "hidden");
       });
   
-  // Add legend
-  const legend = svg.append("g")
-    .attr("transform", `translate(${width - 100}, -30)`);
-  
-  // Ampang
-  legend.append("circle")
-    .attr("cx", 0)
-    .attr("cy", 0)
-    .attr("r", 6)
-    .style("fill", "#e41a1c");
-  
-  legend.append("text")
-    .attr("x", 10)
-    .attr("y", 4)
-    .text("Hospital Ampang")
-    .style("font-size", "10px");
-  
-  // Above Average
-  legend.append("circle")
-    .attr("cx", 0)
-    .attr("cy", 20)
-    .attr("r", 6)
-    .style("fill", "#377eb8")
-    .style("opacity", 0.7);
-  
-  legend.append("text")
-    .attr("x", 10)
-    .attr("y", 24)
-    .text("Above Average")
-    .style("font-size", "10px");
-  
-  // Below Average
-  legend.append("circle")
-    .attr("cx", 0)
-    .attr("cy", 40)
-    .attr("r", 6)
-    .style("fill", "#4daf4a")
-    .style("opacity", 0.7);
-  
-  legend.append("text")
-    .attr("x", 10)
-    .attr("y", 44)
-    .text("Below Average")
-    .style("font-size", "10px");
-  
   // Add title
   svg.append("text")
     .attr("x", width / 2)
@@ -173,4 +128,73 @@ d3.json("data.json").then(function(data) {
     .style("font-size", "16px")
     .style("font-weight", "bold")
     .text("Death Rates of Hospitals with Similar Discharge Numbers");
+  
+  // Add legend - Moved to below the avgDeathRate line
+  // Calculate position below the average death rate line
+  const legendX = width - 160;
+  const legendY = y(avgDeathRate) + 50; // Position below the average line
+  
+  const legend = svg.append("g")
+    .attr("transform", `translate(${legendX}, ${legendY})`);
+  
+  // Add background rectangle for legend
+  legend.append("rect")
+    .attr("x", -10)
+    .attr("y", -25)
+    .attr("width", 160)
+    .attr("height", 85)
+    .attr("fill", "white")
+    .attr("stroke", "#ccc")
+    .attr("stroke-width", 1)
+    .attr("rx", 5);
+  
+  // Add legend title
+  legend.append("text")
+    .attr("x", 70)
+    .attr("y", -10)
+    .style("font-size", "11px")
+    .style("font-weight", "bold")
+    .style("text-anchor", "middle")
+    .text("Legend");
+  
+  // Ampang
+  legend.append("circle")
+    .attr("cx", 10)
+    .attr("cy", 10)
+    .attr("r", 6)
+    .style("fill", "#e41a1c");
+  
+  legend.append("text")
+    .attr("x", 25)
+    .attr("y", 13)
+    .text("Hospital Ampang")
+    .style("font-size", "10px");
+  
+  // Above Average
+  legend.append("circle")
+    .attr("cx", 10)
+    .attr("cy", 30)
+    .attr("r", 6)
+    .style("fill", "#377eb8")
+    .style("opacity", 0.7);
+  
+  legend.append("text")
+    .attr("x", 25)
+    .attr("y", 33)
+    .text("Above Average")
+    .style("font-size", "10px");
+  
+  // Below Average
+  legend.append("circle")
+    .attr("cx", 10)
+    .attr("cy", 50)
+    .attr("r", 6)
+    .style("fill", "#4daf4a")
+    .style("opacity", 0.7);
+  
+  legend.append("text")
+    .attr("x", 25)
+    .attr("y", 53)
+    .text("Below Average")
+    .style("font-size", "10px");
 });
